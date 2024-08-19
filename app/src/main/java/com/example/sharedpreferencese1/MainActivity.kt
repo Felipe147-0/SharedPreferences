@@ -44,6 +44,6 @@ class MainActivity : AppCompatActivity() {
         val str = LocalDateTime.now().toString()
         preferences.edit()
             .putString(KEY_NAME, str)
-            
+            .apply()
     }
 }
